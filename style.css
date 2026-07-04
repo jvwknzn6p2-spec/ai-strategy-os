@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Strategy OS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #93c5fd;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 24px;
+      border-radius: 16px;
+      margin-top: 24px;
+      border: 1px solid #334155;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      margin-top: 56px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="tag">Genesis Protocol</span>
+
+    <h1>AI Strategy OS</h1>
+
+    <p>
+      AI Strategy OS is an intelligence operating system designed to expand human thinking,
+      decision-making, research, prediction, and creation through AI collaboration.
+    </p>
+
+    <div class="card">
+      <h2>Purpose</h2>
+      <p>
+        To build a system where humans and AI think together, review ideas,
+        generate strategies, and transform information into useful contribution.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>First Module: AI Sports Lab</h2>
+      <p>
+        AI Sports Lab is the first experimental module of AI Strategy OS.
+        It will focus on MLB game prediction, Monte Carlo simulation,
+        odds analysis, expected value calculation, and backtesting.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Core Principle</h2>
+      <p>
+        AI is not used to replace human thought.
+        AI is used to expand human thought.
+      </p>
+    </div>
+
+    <footer>
+      Genesis Phase 1 — Foundation Setup
+    </footer>
+  </main>
+</body>
+</html>
