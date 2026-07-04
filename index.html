@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI参謀OS - ミニダッシュボード</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="dark">
+    <header class="topbar">
+      <h1>AI参謀OS</h1>
+      <div class="controls">
+        <button id="themeToggle" aria-label="テーマ切替">🌙</button>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <button data-view="dashboard" class="active">Dashboard</button>
+      <button data-view="daily">Daily Brief</button>
+      <button data-view="crypto">Crypto Watch</button>
+      <button data-view="tools">AI Tools</button>
+      <button data-view="bot">Bot Strategy</button>
+      <button data-view="tasks">Tasks</button>
+      <button data-view="logs">Logs</button>
+    </nav>
+
+    <main class="main">
+      <section id="dashboard" class="view">
+        <h2>Dashboard</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Daily Brief</h3>
+            <p id="briefPreview">—</p>
+            <a href="#" data-open="daily">編集</a>
+          </div>
+          <div class="card">
+            <h3>Crypto</h3>
+            <p id="cryptoPreview">Loading…</p>
+            <a href="#" data-open="crypto">詳しく</a>
+          </div>
+          <div class="card">
+            <h3>Top Task</h3>
+            <p id="taskPreview">—</p>
+            <a href="#" data-open="tasks">タスクを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="daily" class="view hidden">
+        <h2>Daily Brief</h2>
+        <div class="field">
+          <textarea id="dailyText" placeholder="今日の一言、注目点、TODO..." rows="6"></textarea>
+        </div>
+        <div class="actions">
+          <button id="saveDaily">保存</button>
+          <button id="clearDaily" class="danger">クリア</button>
+        </div>
+      </section>
+
+      <section id="crypto" class="view hidden">
+        <h2>Crypto Watch</h2>
+        <div id="cryptoList">読み込み中…</div>
+        <div class="actions">
+          <button id="refreshCrypto">更新</button>
+          <button id="fakePrice">フェイク更新</button>
+        </div>
+      </section>
+
+      <section id="tools" class="view hidden">
+        <h2>AI Tools (ローカルシミュレーション)</h2>
+        <div class="field">
+          <input id="aiPrompt" placeholder="指示を入力（例: 市場サマリーを作って）" />
+        </div>
+        <div class="actions">
+          <button id="runAi">実行</button>
+        </div>
+        <div id="aiResult" class="result">—</div>
+      </section>
+
+      <section id="bot" class="view hidden">
+        <h2>Bot Strategy</h2>
+        <textarea id="botStrategy" rows="6" placeholder="ボット戦略をここに記述"></textarea>
+        <div class="actions">
+          <button id="saveBot">保存</button>
+        </div>
+      </section>
+
+      <section id="tasks" class="view hidden">
+        <h2>Tasks</h2>
+        <div class="taskAdd">
+          <input id="taskInput" placeholder="新しいタスクを追加" />
+          <button id="addTask">追加</button>
+        </div>
+        <ul id="taskList" class="taskList"></ul>
+      </section>
+
+      <section id="logs" class="view hidden">
+        <h2>Logs</h2>
+        <div class="actions">
+          <button id="clearLogs" class="danger">履歴をクリア</button>
+        </div>
+        <ul id="logList" class="logList"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>AI参謀OS - ローカル実行 | GitHub Pages &amp; Replit 対応</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
