@@ -1,98 +1,104 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Strategy OS</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --border: #334155;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #2563eb;
+  --accent-soft: #93c5fd;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 16px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-    h2 {
-      margin-top: 40px;
-      color: #93c5fd;
-    }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 24px;
-      border-radius: 16px;
-      margin-top: 24px;
-      border: 1px solid #334155;
-    }
+h1 {
+  font-size: 42px;
+  margin: 0 0 16px;
+}
 
-    .tag {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 14px;
-      margin-bottom: 16px;
-    }
+h2 {
+  margin: 0 0 12px;
+  color: var(--accent-soft);
+}
 
-    footer {
-      margin-top: 56px;
-      color: #94a3b8;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <main class="container">
-    <span class="tag">Genesis Protocol</span>
+.lead {
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 24px;
+}
 
-    <h1>AI Strategy OS</h1>
+.tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
 
-    <p>
-      AI Strategy OS is an intelligence operating system designed to expand human thinking,
-      decision-making, research, prediction, and creation through AI collaboration.
-    </p>
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 16px;
+}
 
-    <div class="card">
-      <h2>Purpose</h2>
-      <p>
-        To build a system where humans and AI think together, review ideas,
-        generate strategies, and transform information into useful contribution.
-      </p>
-    </div>
+.nav a {
+  color: var(--accent-soft);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
 
-    <div class="card">
-      <h2>First Module: AI Sports Lab</h2>
-      <p>
-        AI Sports Lab is the first experimental module of AI Strategy OS.
-        It will focus on MLB game prediction, Monte Carlo simulation,
-        odds analysis, expected value calculation, and backtesting.
-      </p>
-    </div>
+.nav a:hover {
+  border-color: var(--accent-soft);
+  color: #fff;
+}
 
-    <div class="card">
-      <h2>Core Principle</h2>
-      <p>
-        AI is not used to replace human thought.
-        AI is used to expand human thought.
-      </p>
-    </div>
+.card {
+  background: var(--surface);
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 24px;
+  border: 1px solid var(--border);
+}
 
-    <footer>
-      Genesis Phase 1 — Foundation Setup
-    </footer>
-  </main>
-</body>
-</html>
+.card p {
+  margin: 0 0 8px;
+}
+
+.card-link {
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 14px;
+}

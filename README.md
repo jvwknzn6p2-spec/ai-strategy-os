@@ -34,14 +34,22 @@ AI is used to expand human thought.
 
 Phase 0: Foundation setup
 
-Current repository contains:
+Current repository structure:
 
-- README.md
-- index.html
+- index.html — landing page
+- style.css — landing page styles
+- README.md — this file
+- docs/
+  - roadmap.md — project phases and direction
+  - genesis-principles.md — founding principles
+- sports-lab/
+  - README.md — AI Sports Lab overview
+  - model-plan.md — prediction model plan
+- data/
+  - README.md — data folder guidelines
 
 Next steps:
 
-1. Build landing page
-2. Connect to Replit
-3. Create project structure
-4. Implement AI Sports Lab prototype
+1. Implement AI Sports Lab prototype
+2. Begin data collection
+3. Build baseline prediction model
